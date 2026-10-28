@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Workshop Eksklusif</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1>Formulir Pendaftaran Workshop Teknologi</h1>
+        <p class="subtitle">Tingkatkan keterampilan profesional Anda dengan bergabung dalam sesi workshop pilihan kami.</p>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            
+            <!-- Bagian 1: Data Peserta -->
+            <fieldset>
+                <legend>Data Diri Peserta</legend>
+                <table class="form-table">
+                    <tr>
+                        <td class="label-col"><label for="nama">Nama Lengkap</label></td>
+                        <td><input type="text" id="nama" name="nama" size="30" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col"><label for="nim">Nomor Induk Mahasiswa (NIM)</label></td>
+                        <td><input type="text" id="nim" name="nim" size="30" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label-col"><label>Jenis Kelamin</label></td>
+                        <td>
+                            <input type="radio" id="laki" name="jk" value="Laki-laki" />
+                            <label for="laki" class="inline-label">Laki-laki</label>
+                            <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                            <label for="perempuan" class="inline-label">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col"><label for="prodi">Program Studi</label></td>
+                        <td>
+                            <select id="prodi" name="prodi">
+                                <option value="">-- Pilih Program Studi --</option>
+                                <option value="Informatika">Informatika</option>
+                                <option value="Sistem Informasi">Sistem Informasi</option>
+                                <option value="Teknik Industri">Teknik Industri</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <!-- Bagian 2: Pilihan Workshop -->
+            <fieldset>
+                <legend>Pilihan Materi Workshop</legend>
+                <table class="form-table">
+                    <tr>
+                        <td class="label-col"><label>Kategori Peserta</label></td>
+                        <td>
+                            <input type="radio" id="mahasiswa" name="jenis_peserta" value="Mahasiswa" />
+                            <label for="mahasiswa" class="inline-label">Mahasiswa</label>
+                            <input type="radio" id="umum" name="jenis_peserta" value="Umum" />
+                            <label for="umum" class="inline-label">Umum</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col"><label>Materi Pilihan</label></td>
+                        <td>
+                            <input type="checkbox" id="uiux" name="materi" value="UI/UX Design" />
+                            <label for="uiux" class="inline-label">UI/UX Design</label><br />
+                            
+                            <input type="checkbox" id="webdev" name="materi" value="Web Development" />
+                            <label for="webdev" class="inline-label">Web Development</label><br />
+                            
+                            <input type="checkbox" id="data" name="materi" value="Data Analysis" />
+                            <label for="data" class="inline-label">Data Analysis</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <!-- Bagian 3: Informasi Tambahan & Pembayaran -->
+            <fieldset>
+                <legend>Informasi Tambahan &amp; Pembayaran</legend>
+                <table class="form-table">
+                    <tr>
+                        <td class="label-col" style="vertical-align:top;"><label for="alasan">Motivasi Mengikuti</label></td>
+                        <td>
+                            <textarea id="alasan" name="alasan" rows="4" cols="30" placeholder="Tuliskan alasan singkat Anda..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col"><label>Metode Pembayaran</label></td>
+                        <td>
+                            <input type="radio" id="qris" name="pembayaran" value="QRIS" />
+                            <label for="qris" class="inline-label">QRIS</label>
+                            <input type="radio" id="tf" name="pembayaran" value="Transfer Bank" />
+                            <label for="tf" class="inline-label">Transfer Bank</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label-col"><label for="bukti">Unggah Bukti Bayar</label></td>
+                        <td>
+                            <input type="file" id="bukti" name="bukti" />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <div class="button-container">
+                <input type="submit" name="daftar" value="Kirim Pendaftaran" class="btn-submit" />
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
